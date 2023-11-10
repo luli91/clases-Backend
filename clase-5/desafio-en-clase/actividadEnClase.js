@@ -6,16 +6,16 @@ let numeros = {};
 
 // Generar 10000 números aleatorios en el rango de 1 a 20
 for (let i = 0; i < 10000; i++) {
-  let numeroAleatorio = Math.floor(Math.random() * 20) + 1;
+  let numeroAleatorio = Math.floor(Math.random() * 20) + 1; //+1 para que no me tire 0
 
   // Si el número ya existe en el objeto, incrementar su frecuencia
-  if (numeros[numeroAleatorio]) {
+    if (numeros[numeroAleatorio]) {
     numeros[numeroAleatorio]++;
-  } 
+} 
   // Si el número no existe en el objeto, añadirlo con una frecuencia de 1
-  else {
+else {
     numeros[numeroAleatorio] = 1;
-  }
+    }
 }
 
 // Imprimir los resultados
