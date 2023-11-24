@@ -1,0 +1,16 @@
+{{!-- Esto se muestra en http://localhost:5000/food --}}
+<div>
+    {{#if isAdmin}}
+    Bienvenido Admin
+    {{#each food}}
+    {{!-- en el caso que sea true --}}
+        <div>
+            <p> {{ this.name }}</p>
+            <p> {{ this.price }} </p>
+        </div>
+    {{/each}}
+    {{!-- en el caso que sea false --}}
+    {{else}}
+        <p> No tenés acceso</p>
+    {{/if}}
+</div> 
